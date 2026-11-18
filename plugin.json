@@ -1,0 +1,5 @@
+{
+  "name": "notion-md",
+  "version": "0.1.0",
+  "description": "Unwraps Notion MCP fetch results into Markdown. Large pages go to a per-turn file with a line-numbered outline, deleted when the turn ends."
+}

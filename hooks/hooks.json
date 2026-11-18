@@ -1,0 +1,29 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "notion-fetch$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python",
+            "args": ["${MIXDOG_PLUGIN_ROOT}/scripts/notion_md.py", "post"],
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python",
+            "args": ["${MIXDOG_PLUGIN_ROOT}/scripts/notion_md.py", "stop"],
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}
